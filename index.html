@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Retro Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div id="gameStartMenu" class="flex-container">
+        <img id="gameTitleImage" src="assets/images/myAvatar.svg" alt="Retro Game Welcome Image" height="150px" width="150px"/>
+        <h1 id="pressKeyToStart">Press any key to get started</h1>
+        <h4 id="clickForHint">Click here for a hint!</h4>
+        <h1 id="pressKeyTryAgain">Press any key to try again</h1>
+    </div>
+
+    <div id="gameMenu" class="flex-container">
+        
+        <div class="flex-container flex-container-left">
+            <img id="winImage" class="flex-item" src="assets/images/youWin.png" alt="Winning Image"/>
+            <img id="loseImage" class="flex-item" src="assets/images/gameover.png" alt="Game Over Image"/>
+            <img id="pacmanImage" src="" alt=""/>
+        </div>
+
+        <div class="flex-container flex-container-top">
+            <div class="flex-item">
+                <h2>Wins</h2>
+                <h3 id="gameWins"></h3>
+            </div>
+            <div class="flex-item">
+                <h2>Current Word</h2>
+                <h3 id="currentWord"></h3>
+            </div>
+        </div>
+        
+        <div class="flex-container flex-container-bottom">
+            <div class="flex-item">
+                <h2>Guesses Remaining</h2>
+                <h3 id="guessRemain"></h3>
+            </div>
+            <div class="flex-item">
+                <h2>Letters Guessed</h2>
+                <h3 id="guessLetters"></h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        resetGame();
+        updateDisplay();
+    </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script> -->
+</body>
+</html>
