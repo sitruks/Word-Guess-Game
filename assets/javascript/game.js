@@ -19,7 +19,7 @@ var selectableWords =
 
 const maxTries = 10;            // Maximum number of tries player has
 var guessLetters = [];        // Stores the letters the user guessed
-var currentWordIndex;           // Index of the current word in the array
+          // Index of the current word in the array
 var guessWord = [];          // This will be the word we actually build to match the current word
 var guessRemain = 0;       // How many tries the player has left
 var gameStart = false;        // Flag to tell if the game has started
@@ -35,10 +35,9 @@ function resetGame() {
     guessLetters = [];
     guessWord = [];
     document.getElementById("pressKeyTryAgain").style.cssText= "display: none";
+    document.getElementById("clickForHint").style.cssText= "display: none";
     document.getElementById("loseImage").style.cssText = "display: none";
     document.getElementById("winImage").style.cssText = "display: none";
-
-    // Make sure the hangman image is cleared
     document.getElementById("pacmanImage").src = "";
 
     // Build the guessing word and clear it out
